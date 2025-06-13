@@ -2,20 +2,12 @@ name: Ejecutar main.py semanalmente
 
 on:
   schedule:
-    - cron: '10 7 * * 5'  # Cada viernes a las 06:58 UTC 2 horas menos
-  push:
-    branches:
-      - main
+    - cron: '27 7 * * 5'  # Cada viernes a las 06:58 UTC 2 horas menos
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-#    environment: RESERVA_LOWFIT
-
-#    env:
-#      USER: ${{ secrets.USER }}
-#      PASSWORD: ${{ secrets.PASSWORD }}
-
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
