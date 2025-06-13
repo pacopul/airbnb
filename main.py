@@ -19,7 +19,7 @@ driver = webdriver.Chrome (
     service=Service(ChromeDriverManager().install()), 
     options=opts
 )
-driver.get("https://www.airbnb.com/")
+driver.get("https://www.airbnb.es/")
 sleep(5)
 """
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
