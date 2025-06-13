@@ -2,7 +2,7 @@ name: Ejecutar main.py semanalmente
 
 on:
   schedule:
-    - cron: '04 7 * * 5'  # Cada viernes a las 06:58 UTC 2 horas menos
+    - cron: '10 7 * * 5'  # Cada viernes a las 06:58 UTC 2 horas menos
   push:
     branches:
       - main
